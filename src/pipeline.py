@@ -1,6 +1,7 @@
-# NGS Bioinformatics Pipeline
+C# NGS Bioinformatics Pipeline
 Author: 31042228
 # Description: Pipeline for NGS data processing
+
 # Quality Control Module
 def run_fastqc(input_file) :
 # Quality Control Module
@@ -13,3 +14,15 @@ def run_fastqc(input_file):
     print('Min read length:', min_length)
     print('Adapter removal:', adapter_removal)
     print('QC complete.')
+
+# Variant Calling Module
+def run_variant_calling(input_file):
+    print('Running variant calling on', input_file)
+    min_quality = 30
+    min_depth = 10
+    ploidy = 2
+    print('Min quality score:', min_quality)
+    print('Min depth:', min_depth)
+    print('Ploidy:', ploidy)
+    print('Variant calling complete.')
+

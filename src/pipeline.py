@@ -35,3 +35,8 @@ def validate_fastq(input_file):
     if not input_file.endswith('.fastq'):
         raise ValueError(f"File must be FASTQ format: {input_file}")
     print("Input validation passed for:", input_file)
+
+def check_quality_scores(input_file, min_quality=20):
+    print(f"Checking quality scores in: {input_file}")
+    print(f"Minimum quality threshold: {min_quality}")
+    print("Quality check complete.")

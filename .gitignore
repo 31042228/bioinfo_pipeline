@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Large bioinformatics data files
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+*.vcf
+*.fasta
+*.fa
+*.sam
+
+# Results and data folders
+results/
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
+.idea/
+
+# R files
+.Rhistory
+.RData
